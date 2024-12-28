@@ -2,5 +2,3 @@ streamlit==1.41.1
 pandas
 numpy
 xgboost
-pickle
-
