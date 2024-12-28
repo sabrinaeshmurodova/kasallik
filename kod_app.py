@@ -25,7 +25,6 @@ CHEST_PAIN = st.selectbox("ST Depression", options=[0, 1], format_func=lambda x:
 
 if st.button("Predict Heart Disease"):
     user_input = [
-       user_input = [
         AGE, SMOKING, YELLOW_FINGERS, ANXIETY, PEER_PRESSURE, CHRONIC_DISEASE, WHEEZING, ALCOHOL_CONSUMING, COUGHING, SHORTNESS_OFBREATH, SWALLOWING_DIFFICULTY, CHEST_PAIN
     ]
 
