@@ -5,7 +5,7 @@ import pickle
 st.set_page_config(page_title=" O`pka Saraton Kasalligi Tashxisi", page_icon="🩺", layout="centered")
 
 model_path = "model.pkl"
-with open('model.pkl', 'wb') as file:
+with open('model.pkl', 'rb') as file:
    model = pickle.load(file)
 
 print("Model saved successfully as 'model.pkl'.")
@@ -119,7 +119,7 @@ if st.button("Natijani Ko'rish"):
 st.markdown(
     """
     <div class='footer'>
-      Ushbu ilova jigar kasalligi bo'yicha bashorat qiladi. Muallif: Eshmurodova Sabrinna<br>
+      Ushbu ilova o`pka saratoni kasalligi bo'yicha bashorat qiladi. Muallif: Eshmurodova Sabrinna<br>
         <a href='https://colab.research.google.com/drive/1bHgqcRkcOtDEQDCCiNKXaX0_GMlnCTA5?usp=sharing' target='_blank'>
             📰 Colab
         </a>
