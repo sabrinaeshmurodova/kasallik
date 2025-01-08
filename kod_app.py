@@ -1,5 +1,4 @@
 import streamlit as st
-mport streamlit as st
 import pickle
 
 st.set_page_config(page_title="Saraton Kasalligi Tashxisi", page_icon="🩺", layout="centered")
@@ -9,9 +8,13 @@ with open(model_path, 'rb') as file:
     model = pickle.load(file)
 
 bio_features = [
-    "ALB (Albumin)", "ALP (Alkaline Phosphatase)", "ALT (Alanine Transaminase)",
-    "AST (Aspartate Transaminase)", "BIL (Bilirubin)", "CHE (Cholinesterase)",
-    "CHOL (Cholesterol)", "CREA (Creatinine)", "GGT (Gamma-GT)", "PROT (Total Protein)"
+ # "AGE"(yosh),"SMOKING"(chekish),"ANXIETY"(tashvish),"PEER_PRESSURE"(bosim),
+  #  "CHRONIC DISEASE"(surunkali kasallik),"ALCOHOL CONSUMING"(Spirtli ichimliklarni iste'mol qilish),"COUGHING"(yo`talish),
+  #"SHORTNESS OF BREATH"(nafas qisishi),"CHEST PAIN"(ko`krak og`rigi) 
+    "AGE","SMOKING","ANXIETY","PEER_PRESSURE",
+  "CHRONIC DISEASE","ALCOHOL CONSUMING","COUGHING",
+  "SHORTNESS OF BREATH","CHEST PAIN" 
+
 ]
 
 result_mapping = {
