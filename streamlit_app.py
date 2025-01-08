@@ -6,7 +6,7 @@ model_path = 'model.pkl'
 with open(model_path, 'rb') as file:
     model = pickle.load(file)
 
-st.title("Heart Disease Predictor")
+st.title("saraton")
 
 
 GENDER = st.number_input("GENDER", min_value=0, max_value=120, value=30)
