@@ -1,7 +1,7 @@
 import streamlit as st
 import pickle
 
-st.set_page_config(page_title="Saraton Kasalligi Tashxisi", page_icon="🩺", layout="centered")
+st.set_page_config(page_title=" O`pka Saraton Kasalligi Tashxisi", page_icon="🩺", layout="centered")
 
 model_path = "model.pkl"
 with open(model_path, 'rb') as file:
@@ -19,9 +19,9 @@ bio_features = [
 
 result_mapping = {
     0: "Donor (Sog'lom)",
-    1: "Gepatit (Jigar yallig'lanishi)",
-    2: "Fibroz (Jigar to'qima o'zgarishi)",
-    3: "Sirroz (Jigar yetishmovchiligi)",
+    1: "Gepatit (O`pka yallig'lanishi)",
+    2: "Fibroz (O`pka shamollashi)",
+    3: "Sirroz (O`pka Saraton)",
     4: "Donor gumon qilinmoqda (Kasallik ehtimoli)"
 }
 
