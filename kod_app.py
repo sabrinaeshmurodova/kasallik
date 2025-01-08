@@ -6,7 +6,7 @@ st.set_page_config(page_title=" O`pka Saraton Kasalligi Tashxisi", page_icon="ðŸ
 
 model_path = "model.pkl"
 with open('model.pkl', 'wb') as file:
-    pickle.dump(decision_tree, file)
+   model = pickle.load(file)
 
 print("Model saved successfully as 'model.pkl'.")
 
