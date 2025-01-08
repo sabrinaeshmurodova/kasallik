@@ -3,7 +3,7 @@ import pickle
 import pandas as pd
 
 model_path = 'model.pkl'
-with open(model_path, 'rb') as file:
+with open(model, 'rb') as file:
     model = pickle.load(file)
 
 st.title("saraton")
