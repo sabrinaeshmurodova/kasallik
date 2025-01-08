@@ -3,7 +3,7 @@ import pickle
 
 st.set_page_config(page_title=" O`pka Saraton Kasalligi Tashxisi", page_icon="🩺", layout="centered")
 
-model_path = "model.pkl"
+model_path = "xgboost_model.pkl"
 with open(model_path, 'rb') as file:
     model = pickle.load(file)
 
