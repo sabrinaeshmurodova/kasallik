@@ -1,4 +1,6 @@
 import streamlit as st
+import pundas as pd
+impoert numpy as np
 import pickle
 
 st.set_page_config(page_title=" O`pka Saraton Kasalligi Tashxisi", page_icon="🩺", layout="centered")
