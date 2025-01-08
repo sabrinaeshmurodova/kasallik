@@ -11,7 +11,7 @@ st.title("Heart Disease Predictor")
 
 GENDER = st.number_input("GENDER", min_value=0, max_value=120, value=30)
 AGE = st.selectbox("AGE", options=[0, 1], format_func=lambda x: "Female" if x == 0 else "Male")
-SMOKING = st.selectbox("Chest Pain Type", options=[1,2], format_func=lambda x: ["chekadi", "chekmaydi", "Non-anginal][x]")
+SMOKING = st.selectbox("Chest Pain Type", options=[0,1], format_func=lambda x: ["chekadi", "chekmaydi"][x])
 ANXIETY = st.selectbox("Resting Electrocardiographic Results", options=[0, 1], format_func=lambda x: ["Normal", "ST-T wave abnormality"][x])
 PEER_PRESSURE = st.selectboxput("Maximum Heart Rate Achieved",options=[0, 1], format_func=lambda x: ["Normal", "ST-T wave abnormality"][x])
 CHRONIC_DISEASE	 = st.selectbox("Exercise-CHRONIC DISEAS", options=[0, 1], format_func=lambda x: "No" if x == 0 else "Yes")
@@ -23,7 +23,7 @@ CHEST_PAIN = st.selectbox("ST Depression", options=[0, 1], format_func=lambda x:
 if st.button("Predict Heart Disease"):
     user_input = [
         AGE, SMOKING, YELLOW_FINGERS, ANXIETY, PEER_PRESSURE, CHRONIC_DISEASE, WHEEZING, ALCOHOL_CONSUMING, COUGHING, SHORTNESS_OFBREATH, SWALLOWING_DIFFICULTY, CHEST_PAIN
-
+    ]
     features = [
         "AGE", "SMOKING", "ANXIETY", "PEER_PRESSURE","CHRONIC_DISEASE", "ALCOHOL_CONSUMING", "COUGHING","SHORTNESS_OF_BREATH", "CHEST_PAIN"
     ]
