@@ -5,8 +5,10 @@ import pickle
 st.set_page_config(page_title=" O`pka Saraton Kasalligi Tashxisi", page_icon="🩺", layout="centered")
 
 model_path = "model.pkl"
-with open(model_path, 'rb') as file:
-    model = pickle.load(file)
+with open('model.pkl', 'wb') as file:
+    pickle.dump(decision_tree, file)
+
+print("Model saved successfully as 'model.pkl'.")
 
 bio_features = [
  # "AGE"(yosh),"SMOKING"(chekish),"ANXIETY"(tashvish),"PEER_PRESSURE"(bosim),
