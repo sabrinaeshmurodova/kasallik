@@ -108,7 +108,7 @@ for feature in bio_features:
     value = st.number_input(f"{feature} (Chekish yoki chekmasligi)", value=0.0, step=0.1)
     GENDER.append(value)
 
-user_data = [AGE, GENDER] + GENDER
+user_data = [AGE, GENDER] + SMOKING
 
 if st.button("Natijani Ko'rish"):
     prediction = model.predict([user_data])
